@@ -19,4 +19,9 @@ return {
             require "configs.treesitter"
         end,
     },
+    {
+        "sphamba/smear-cursor.nvim",
+        event = "VeryLazy",
+        opts = require "configs.smear-cursor",
+    },
 }
