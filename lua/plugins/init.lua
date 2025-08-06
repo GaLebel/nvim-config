@@ -19,9 +19,17 @@ return {
             require "configs.treesitter"
         end,
     },
+    -- {
+    --     "sphamba/smear-cursor.nvim",
+    --     event = "VeryLazy",
+    --     opts = require "configs.smear-cursor",
+    -- },
     {
-        "sphamba/smear-cursor.nvim",
+        'echasnovski/mini.nvim',
+        version = false,
         event = "VeryLazy",
-        opts = require "configs.smear-cursor",
-    },
+        config = function()
+            require "configs.mini"
+        end,
+    }
 }
