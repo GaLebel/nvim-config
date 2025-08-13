@@ -1,6 +1,7 @@
+require("nvim-treesitter.install").prefer_git = true 
 require("nvim-treesitter.configs").setup({
   -- A list of parser names, or "all" (the listed parsers MUST always be installed)
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "typescript", "markdown" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "typescript", "markdown", "cpp" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   -- Setting this to true will block Neovim until all parsers are installed.
