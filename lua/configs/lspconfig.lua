@@ -8,11 +8,7 @@ local on_attach = require("nvchad.configs.lspconfig").on_attach
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 -- Define your servers explicitly. Use 'ts_ls' now.
-<<<<<<< HEAD
 local servers = { "html", "cssls", "ts_ls", "clangd"} -- <--- CHANGED: Use "ts_ls"
-=======
-local servers = { "python", "html", "cssls", "ts_ls" } -- <--- CHANGED: Use "ts_ls"
->>>>>>> 41d2dc2e72887c2b5d45bd2c4862738217f99387
 vim.lsp.enable(servers)
 
 -- -- Explicitly set up ts_ls with default NvChad attachments
